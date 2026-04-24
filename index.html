@@ -12,20 +12,32 @@
 <style>
 
 /* =====================
-   GLOBAL
+   COLOR SYSTEM (50/40/10)
+===================== */
+:root {
+  --emerald: #046a38;      /* 50% dominant */
+  --black: #000000;        /* 40% depth */
+  --gold: #c9a24e;         /* 10% accent */
+  --text: #f2eee6;
+}
+
+/* =====================
+   GLOBAL BACKGROUND LAYER SYSTEM
 ===================== */
 body {
   margin: 0;
   font-family: 'Italiana', serif;
-  background-color: #000;
-  color: #f2eee6; /* FIXED: brighter, more readable */
+  color: var(--text);
   text-align: center;
   line-height: 1.75;
-}
 
-/* GOLD ACCENT */
-:root {
-  --gold: #c9a24e;
+  /* 50/40 split visually */
+  background: linear-gradient(
+    135deg,
+    var(--emerald) 0%,
+    var(--emerald) 50%,
+    var(--black) 100%
+  );
 }
 
 /* =====================
@@ -33,9 +45,9 @@ body {
 ===================== */
 .hero {
   padding: 110px 20px 80px;
+  background: rgba(0,0,0,0.35); /* black overlay for readability */
 }
 
-/* HEADER (LOGO ONLY) */
 .hero-header {
   display: flex;
   justify-content: center;
@@ -45,27 +57,30 @@ body {
 
 .logo {
   width: 360px;
-  height: auto;
 }
 
-/* TAGLINE */
+/* =====================
+   TAGLINE
+===================== */
 .tagline {
   font-size: 24px;
   margin-top: 10px;
 }
 
 .subtext {
-  color: #d6d0c6; /* FIXED */
+  color: #e6e1d8;
   margin-bottom: 30px;
+  opacity: 0.9;
 }
 
 /* =====================
-   BUTTON
+   BUTTON (GOLD ACCENT - 10%)
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
-  background-color: #012d21;
+  background-color: var(--black);
   color: var(--gold);
+  border: 1px solid var(--gold);
   padding: 16px 36px;
   text-decoration: none;
   border-radius: 40px;
@@ -77,7 +92,7 @@ body {
 
 .button:hover {
   transform: translateY(-2px);
-  opacity: 0.95;
+  box-shadow: 0 0 18px rgba(201,162,78,0.3);
 }
 
 /* =====================
@@ -86,24 +101,26 @@ body {
 .welcome-text {
   max-width: 650px;
   margin: 25px auto 0;
-  color: #d6d0c6; /* FIXED */
-  font-size: 16px;
-}
-
-/* DIVIDER */
-.divider {
-  width: 60px;
-  height: 2px;
-  background: var(--gold);
-  margin: 40px auto;
-  opacity: 0.7;
+  color: #e6e1d8;
 }
 
 /* =====================
-   SECTIONS
+   DIVIDER (GOLD ACCENT)
+===================== */
+.divider {
+  width: 70px;
+  height: 2px;
+  margin: 50px auto;
+  background: var(--gold);
+  opacity: 0.8;
+}
+
+/* =====================
+   SECTIONS (BLACK DOMINANCE)
 ===================== */
 .section {
-  padding: 110px 20px;
+  padding: 120px 20px;
+  background: rgba(0,0,0,0.25);
 }
 
 h2 {
@@ -112,7 +129,7 @@ h2 {
 }
 
 /* =====================
-   SERVICES
+   SERVICES (EMERALD BASE)
 ===================== */
 .services {
   display: flex;
@@ -123,16 +140,17 @@ h2 {
 }
 
 .card {
-  border: 1px solid rgba(201,162,78,0.5);
-  padding: 25px;
   width: 240px;
-  background-color: rgba(255,255,255,0.02);
+  padding: 25px;
+  background: rgba(4,106,56,0.25); /* emerald tint */
+  border: 1px solid rgba(201,162,78,0.3);
   transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--gold);
+  box-shadow: 0 0 20px rgba(4,106,56,0.25);
 }
 
 .card h3 {
@@ -154,7 +172,8 @@ h2 {
   height: 220px;
   object-fit: cover;
   border-radius: 14px;
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(4,106,56,0.4);
+  transition: 0.3s ease;
 }
 
 .gallery img:hover {
@@ -167,14 +186,13 @@ h2 {
 .meet-title {
   font-size: 26px;
   color: var(--gold);
-  margin-bottom: 10px;
 }
 
 .about-text {
   max-width: 650px;
   margin: auto;
   text-align: left;
-  color: #d6d0c6; /* FIXED */
+  color: #e6e1d8;
 }
 
 /* =====================
@@ -183,7 +201,8 @@ h2 {
 .footer {
   padding: 50px;
   font-size: 13px;
-  color: #9c978e; /* FIXED */
+  color: #d6d0c6;
+  background: rgba(0,0,0,0.4);
 }
 
 </style>
@@ -203,12 +222,12 @@ h2 {
   <div class="subtext">Precision-crafted nail artistry for elevated self-expression.</div>
 
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
-    BOOK NOW
+    BOOK YOUR APPOINTMENT
   </a>
 
   <p class="welcome-text">
     Welcome to Polished Intentions by Alicia.<br><br>
-    Our focus is on high-quality acrylics, manicures, and pedicures tailored to your unique style. 
+    High-quality acrylics, manicures, pedicures, and extras tailored to your unique style.
     We can’t wait to welcome you—book your appointment now!
   </p>
 
@@ -257,7 +276,7 @@ h2 {
   <div class="gallery">
     <img src="Red Nails.jpg" alt="Red nails">
     <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
-    <img src="pinknails.jpg" alt="Pink nails">
+    <img src="Pink.jpg" alt="Pink nails">
   </div>
 
 </div>
@@ -270,8 +289,8 @@ h2 {
   <h2 class="meet-title">Meet Alicia</h2>
 
   <p class="about-text">
-    I specialize in luxury nail services designed to enhance your confidence and style. 
-    Every set is created with intention, precision, and attention to detail—because luxury is in the details, not excess.
+    I specialize in luxury nail services designed with precision, intention, and elegance.
+    Every set is crafted to elevate your natural beauty.
   </p>
 
 </div>
