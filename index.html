@@ -16,8 +16,8 @@
 ===================== */
 :root {
   --black: #000000;
-  --sage: #a3b899;       /* light sage green */
-  --emerald: #046a38;    /* deep emerald green */
+  --sage: #a3b899;
+  --emerald: #046a38;
   --gold: #c9a24e;
   --text: #f2eee6;
 }
@@ -32,10 +32,9 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  /* sage glow into black luxury depth */
   background: linear-gradient(
     180deg,
-    rgba(163,184,153,0.35) 0%,   /* sage */
+    rgba(163,184,153,0.35) 0%,  /* sage glow */
     var(--black) 55%,
     var(--black) 100%
   );
@@ -46,7 +45,7 @@ body {
 ===================== */
 .hero {
   padding: 110px 20px 80px;
-  background: rgba(4,106,56,0.12); /* emerald tint */
+  background: rgba(4,106,56,0.12);
 }
 
 /* =====================
@@ -82,26 +81,27 @@ body {
 }
 
 /* =====================
-   BUTTON (EMERALD LUXURY)
+   BUTTON (RESTORED BLACK + GOLD)
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
-  background: linear-gradient(135deg, var(--emerald), #022a17);
+  background: #000; /* black */
   color: var(--gold);
   padding: 16px 40px;
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
   letter-spacing: 1.5px;
-  border: 1px solid rgba(201,162,78,0.6);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+  border: 1px solid var(--gold);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
   transition: all 0.35s ease;
 }
 
 .button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(4,106,56,0.25);
-  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(201,162,78,0.35);
+  background: #0a0a0a;
 }
 
 /* =====================
@@ -128,7 +128,6 @@ body {
     var(--emerald),
     transparent
   );
-  opacity: 0.9;
 }
 
 /* =====================
@@ -145,7 +144,7 @@ h2 {
 }
 
 /* =====================
-   SERVICES (EMERALD BASE)
+   SERVICES
 ===================== */
 .services {
   display: flex;
@@ -158,8 +157,8 @@ h2 {
 .card {
   width: 240px;
   padding: 25px;
-  background: rgba(4,106,56,0.15); /* emerald */
-  border: 1px solid rgba(163,184,153,0.35); /* sage border */
+  background: rgba(4,106,56,0.15);
+  border: 1px solid rgba(163,184,153,0.35);
   transition: 0.3s ease;
 }
 
@@ -188,7 +187,7 @@ h2 {
   height: 220px;
   object-fit: cover;
   border-radius: 14px;
-  border: 1px solid rgba(163,184,153,0.4); /* sage */
+  border: 1px solid rgba(163,184,153,0.4);
   transition: 0.3s ease;
 }
 
