@@ -12,17 +12,17 @@
 <style>
 
 /* =====================
-   COLOR SYSTEM (50/35/15)
+   COLOR SYSTEM
 ===================== */
 :root {
-  --black: #000000;        /* 50% base */
-  --emerald: #046a38;      /* 35% secondary */
-  --gold: #c9a24e;         /* 15% accent */
+  --black: #000000;
+  --emerald: #046a38;
+  --gold: #c9a24e;
   --text: #f2eee6;
 }
 
 /* =====================
-   GLOBAL BACKGROUND
+   GLOBAL BACKGROUND (NOW GREEN DOMINANT)
 ===================== */
 body {
   margin: 0;
@@ -31,25 +31,35 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  /* dominant black with emerald depth */
-  background:
-    radial-gradient(circle at top, rgba(4,106,56,0.25), transparent 60%),
-    linear-gradient(180deg, var(--black) 0%, var(--black) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--emerald) 0%,
+    #023a20 50%,
+    var(--black) 100%
+  );
 }
 
 /* =====================
-   HERO
+   HERO (GREEN AREA)
 ===================== */
 .hero {
   padding: 110px 20px 80px;
-  background: rgba(4,106,56,0.12); /* soft emerald wash */
+  background: rgba(4,106,56,0.15);
 }
 
+/* =====================
+   LOGO PANEL (NOW BLACK BOX)
+===================== */
 .hero-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+
+  background: var(--black);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -57,7 +67,7 @@ body {
 }
 
 /* =====================
-   TAGLINE
+   TEXT
 ===================== */
 .tagline {
   font-size: 24px;
@@ -67,29 +77,29 @@ body {
 .subtext {
   color: #e6e1d8;
   margin-bottom: 30px;
-  opacity: 0.9;
 }
 
 /* =====================
-   BUTTON (GOLD ACCENT)
+   BUTTON (NEW LUXURY STYLE)
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
-  background-color: rgba(4,106,56,0.4);
+  background: linear-gradient(135deg, var(--black), #111);
   color: var(--gold);
-  border: 1px solid var(--gold);
-  padding: 16px 36px;
+  padding: 16px 40px;
   text-decoration: none;
-  border-radius: 40px;
+  border-radius: 50px;
   display: inline-block;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(201,162,78,0.6);
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 18px rgba(201,162,78,0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(201,162,78,0.25);
+  border-color: var(--gold);
 }
 
 /* =====================
@@ -102,7 +112,7 @@ body {
 }
 
 /* =====================
-   DIVIDER (GOLD)
+   DIVIDER
 ===================== */
 .divider {
   width: 70px;
@@ -113,11 +123,11 @@ body {
 }
 
 /* =====================
-   SECTIONS (BLACK DOMINANT)
+   SECTIONS
 ===================== */
 .section {
   padding: 120px 20px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.25);
 }
 
 h2 {
@@ -126,7 +136,7 @@ h2 {
 }
 
 /* =====================
-   SERVICES (EMERALD BALANCE)
+   SERVICES
 ===================== */
 .services {
   display: flex;
@@ -147,7 +157,7 @@ h2 {
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--gold);
-  box-shadow: 0 0 22px rgba(4,106,56,0.25);
+  box-shadow: 0 0 20px rgba(4,106,56,0.25);
 }
 
 .card h3 {
@@ -199,7 +209,7 @@ h2 {
   padding: 50px;
   font-size: 13px;
   color: #d6d0c6;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
 }
 
 </style>
@@ -211,6 +221,7 @@ h2 {
 <!-- HERO -->
 <div class="hero">
 
+  <!-- LOGO NOW ON BLACK PANEL -->
   <div class="hero-header">
     <img src="logo.png" class="logo" alt="Polished Intentions Logo">
   </div>
@@ -218,6 +229,7 @@ h2 {
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
   <div class="subtext">Precision-crafted nail artistry for elevated self-expression.</div>
 
+  <!-- NEW BUTTON -->
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
     BOOK YOUR APPOINTMENT
   </a>
