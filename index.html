@@ -6,17 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polished Intentions</title>
 
-<!-- FONTS (cleaned up, no duplicates) -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&family=Kaushan+Script&family=Parisienne&family=Alex+Brush&family=Italiana&display=swap" rel="stylesheet">
 
 <style>
 
 /* GLOBAL */
 body {
-  font-family: 'Asap', Arial, sans-serif;
+  font-family: 'Italiana', serif;
   margin: 0;
   background-color: #000;
   color: #fff;
@@ -34,26 +31,27 @@ body {
 
 /* LOGO */
 .logo {
-  width: 250px;
-  height: auto;
+  width: 350px;
 }
 
 /* TITLE */
 .brand-title {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 60px;
-  font-weight: 400;
   margin: 0;
-  line-height: 1.1;
   text-align: left;
 }
 
 .byline {
   display: block;
+  font-family: 'Italiana', serif;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
   color: #ccc;
-  margin-top: 5px;
+}
+
+/* H1 GLOBAL */
+h1 {
+  font-family: 'Tangerine', cursive;
 }
 
 /* HERO */
@@ -63,28 +61,30 @@ body {
 
 .tagline {
   font-size: 26px;
-  margin: 20px 0;
 }
 
 .subtext {
   color: #ccc;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* BUTTON */
 .button {
+  font-family: 'Kaushan Script', cursive;
   background-color: #012d21;
   color: #D4AF37;
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 30px;
-  font-weight: bold;
   display: inline-block;
-  transition: 0.3s;
 }
 
-.button:hover {
-  opacity: 0.85;
+/* WELCOME TEXT */
+.welcome-text {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 /* SECTIONS */
@@ -92,7 +92,7 @@ body {
   padding: 60px 20px;
 }
 
-h1, h2 {
+h2 {
   color: #D4AF37;
 }
 
@@ -102,6 +102,11 @@ h1, h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+.card h3 {
+  font-family: 'Alex Brush', cursive;
+  font-size: 26px;
 }
 
 .card {
@@ -115,7 +120,12 @@ h1, h2 {
   width: 200px;
   border-radius: 10px;
   margin: 10px;
-  object-fit: cover;
+}
+
+/* MEET ALICIA TITLE */
+.meet-title {
+  font-family: 'Parisienne', cursive;
+  font-size: 36px;
 }
 
 /* FOOTER */
@@ -136,10 +146,8 @@ h1, h2 {
 
   <div class="hero-header">
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="Polished Intentions Logo" class="logo">
+    <img src="logo.png" class="logo">
 
-    <!-- TITLE -->
     <h1 class="brand-title">
       Polished Intentions
       <span class="byline">by Alicia</span>
@@ -150,10 +158,15 @@ h1, h2 {
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
   <div class="subtext">Designed with intention. Finished to perfection.</div>
 
-  <!-- BOOKING BUTTON -->
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
-    BOOK YOUR APPOINTMENT
+    BOOK NOW
   </a>
+
+  <p class="welcome-text">
+    Welcome to Polished Intentions by Alicia.<br><br>
+    Our focus is on high-quality acrylics, manicures, pedicures, and extras tailored to your unique style. 
+    We can’t wait to welcome you—book your appointment now!
+  </p>
 
 </div>
 
@@ -185,25 +198,22 @@ h1, h2 {
 
   </div>
 
-  <p style="margin-top:20px; color:#aaa;">
-    Prices include booking & processing fee.
-  </p>
 </div>
 
 <!-- GALLERY -->
 <div class="section gallery">
   <h2>Recent Work</h2>
 
-  <!-- TIP: best practice is to rename files without spaces -->
-  <img src="Red Nails.jpg" alt="Red nail design">
-  <img src="Yellow Lemon Nails.jpg" alt="Yellow lemon nail design">
-  <img src="Pink.jpg" alt="Pink design">
+  <!-- FIXED: renamed third image -->
+  <img src="Red Nails.jpg" alt="Red nails">
+  <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
+  <img src="pinknails.jpg" alt="pink nails">
 
 </div>
 
 <!-- ABOUT -->
 <div class="section">
-  <h2>Meet Alicia</h2>
+  <h2 class="meet-title">Meet Alicia</h2>
 
   <p style="max-width:600px; margin:auto;">
     I specialize in luxury nail services designed to enhance your confidence and style.
