@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Asap:wght@400;600&display=swap" rel="stylesheet">
-  
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polished Intentions</title>
 
 <style>
-h1 {
-  font-family: 'Tangerine', cursive;
-}
 body {
-  font-family: 'Asap', sans-serif;
   margin: 0;
-  body {
-  font-family: 'Asap', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #000;
   color: #fff;
   text-align: center;
 }
 
-/* HEADER */
+h1, h2 {
+  color: #D4AF37;
+}
+
+/* HERO HEADER LAYOUT */
 .hero-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-  margin-top: 20px;
+  gap: 15px;
 }
 
 /* LOGO */
 .logo {
-  width: 350px;
-  height: auto;
+  width: 80px;
 }
 
 /* TITLE */
@@ -46,16 +40,15 @@ body {
   font-size: 60px;
   font-weight: 400;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.2;
   text-align: left;
 }
 
 .byline {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
   color: #ccc;
-  margin-top: 5px;
 }
 
 /* HERO */
@@ -64,7 +57,7 @@ body {
 }
 
 .tagline {
-  font-size: 26px;
+  font-size: 28px;
   margin: 20px 0;
 }
 
@@ -81,8 +74,6 @@ body {
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
-  display: inline-block;
-  transition: 0.3s;
 }
 
 .button:hover {
@@ -94,11 +85,6 @@ body {
   padding: 60px 20px;
 }
 
-h1, h2 {
-  color: #D4AF37;
-}
-
-/* SERVICES */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -112,20 +98,17 @@ h1, h2 {
   width: 250px;
 }
 
-/* GALLERY */
 .gallery img {
   width: 200px;
   border-radius: 10px;
   margin: 10px;
 }
 
-/* FOOTER */
 .footer {
   padding: 40px;
   font-size: 14px;
   color: #aaa;
 }
-
 </style>
 </head>
 
@@ -134,27 +117,22 @@ h1, h2 {
 <!-- HERO -->
 <div class="hero">
 
+  <!-- LOGO + TITLE -->
   <div class="hero-header">
+    <img src="logo.png" alt="Logo" class="logo">
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="Polished Intentions Logo" class="logo">
-
-    <!-- TITLE -->
     <h1 class="brand-title">
       Polished Intentions
       <span class="byline">by Alicia</span>
     </h1>
-
   </div>
 
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
   <div class="subtext">Designed with intention. Finished to perfection.</div>
 
-  <!-- FACEBOOK BOOKING -->
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
     BOOK YOUR APPOINTMENT
   </a>
-
 </div>
 
 <!-- SERVICES -->
@@ -162,7 +140,6 @@ h1, h2 {
   <h2>Services</h2>
 
   <div class="services">
-
     <div class="card">
       <h3>Acrylics</h3>
       <p>Starting at $70</p>
@@ -182,7 +159,6 @@ h1, h2 {
       <h3>Nail Art</h3>
       <p>Starting at $15</p>
     </div>
-
   </div>
 
   <p style="margin-top:20px; color:#aaa;">
