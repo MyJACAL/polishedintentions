@@ -1,80 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Extras | Polished Intentions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
-
-<style>
-
-body {
-  margin:0;
-  font-family:'Italiana';
-  background: linear-gradient(180deg, rgba(163,184,153,0.25), #000 60%);
-  color:#f2eee6;
-  text-align:center;
-}
-
-.logo { width:230px; margin-top:40px; }
-
-h1 { color:#c9a24e; }
-
-.feature-img {
-  width:260px;
-  height:260px;
-  object-fit:cover;
-  border-radius:16px;
-  margin:25px auto;
-}
-
-.menu {
-  max-width:600px;
-  margin:auto;
-  text-align:left;
-  font-family:'Playfair Display';
-  line-height:2.2;
-}
-
-.line {
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid rgba(163,184,153,0.15);
-  padding:6px 0;
-}
-
-.button {
-  margin:40px auto;
-  display:inline-block;
-  padding:14px 38px;
-  border-radius:40px;
-  border:1px solid #c9a24e;
-  color:#c9a24e;
-  background:#000;
-  font-family:'Kaushan Script';
-  text-decoration:none;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<img src="logo.png">
+<div class="logo-header">
+  <img src="logo.png" class="logo-wide" alt="Polished Intentions">
+</div>
 
 <h1>Extras</h1>
+<p class="subtext">Finishing touches that elevate every set.</p>
 
-<p>Finishing touches that elevate every set.</p>
+<img src="pinknails.jpg" class="feature-img" alt="Nail art">
 
-<img src="pinknails.jpg" class="feature-img">
+<div class="divider"></div>
 
 <div class="menu">
 
-<div class="line"><span>Basic Nail Art</span><span>$15+</span></div>
-<div class="line"><span>Detailed Nail Art</span><span>$25+</span></div>
-<div class="line"><span>Polish Change</span><span>$20</span></div>
+  <div class="section-title">Nail Art</div>
+
+  <div class="line"><span>Basic Nail Art</span><span>$15+</span></div>
+  <div class="line"><span>Detailed Nail Art</span><span>$25+</span></div>
+
+  <div class="section-title">Add-Ons</div>
+
+  <div class="line"><span>Polish Change</span><span>$20</span></div>
+  <div class="line"><span>Chrome Finish</span><span>$10+</span></div>
 
 </div>
+
+<div class="divider"></div>
 
 <a href="index.html" class="button">Back Home</a>
 
