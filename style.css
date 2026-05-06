@@ -24,8 +24,9 @@ body {
 
   background: linear-gradient(
     180deg,
-    rgba(163,184,153,0.35) 0%,
-    #000000 55%,
+    rgba(163,184,153,0.45) 0%,   /* sage */
+    rgba(4,106,56,0.35) 35%,     /* emerald */
+    rgba(0,0,0,0.95) 75%,        /* deep fade into black */
     #000000 100%
   );
 }
