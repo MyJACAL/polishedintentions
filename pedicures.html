@@ -5,96 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pedicures | Polished Intentions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <style>
-
-:root {
-  --black:#000;
-  --sage:#a3b899;
-  --emerald:#046a38;
-  --gold:#c9a24e;
-  --text:#f2eee6;
-}
-
 body {
   margin:0;
-  font-family:'Italiana', serif;
+  font-family:'Italiana';
   background: linear-gradient(180deg, rgba(163,184,153,0.25), #000 60%);
-  color: var(--text);
+  color:#f2eee6;
   text-align:center;
 }
 
-.header {
-  padding:60px 20px;
-  background: rgba(4,106,56,0.12);
-}
+.logo { width:230px; margin-top:40px; }
 
-.logo {
+h1 { color:#c9a24e; }
+
+.feature-img {
   width:260px;
-  margin-bottom:20px;
+  height:260px;
+  object-fit:cover;
+  border-radius:16px;
+  margin:25px auto;
 }
 
-h1 {
-  color: var(--gold);
-}
-
-.section {
-  padding:80px 20px;
-  background: rgba(0,0,0,0.5);
-}
-
-.price-box {
-  max-width:600px;
+.menu {
+  max-width:650px;
   margin:auto;
   text-align:left;
-  color:#e6e1d8;
-  line-height:2;
+  font-family:'Playfair Display';
+  line-height:2.2;
+}
+
+.line {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(163,184,153,0.15);
+  padding:6px 0;
 }
 
 .button {
+  margin:40px auto;
   display:inline-block;
-  margin-top:40px;
-  padding:14px 35px;
+  padding:14px 38px;
   border-radius:40px;
-  border:1px solid var(--gold);
-  color:var(--gold);
-  text-decoration:none;
+  border:1px solid #c9a24e;
+  color:#c9a24e;
   background:#000;
-  font-family:'Kaushan Script', cursive;
+  font-family:'Kaushan Script';
+  text-decoration:none;
 }
-
-.button:hover {
-  box-shadow:0 0 18px rgba(201,162,78,0.35);
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <img src="logo.png" class="logo">
-  <h1>Pedicures</h1>
-  <p>Spa-level relaxation for your feet.</p>
-</div>
+<img src="logo.png" class="logo">
 
-<div class="section">
+<h1>Pedicures</h1>
 
-  <div class="price-box">
+<p>Spa-level relaxation and care.</p>
 
-    <h2>Pedicure Services</h2>
+<img src="Yellow Lemon Nails.jpg" class="feature-img">
 
-    Basic Pedicure — $45<br>
-    Deluxe Pedicure — $80<br>
-    Gel Add-On — $15<br>
-    Kids Pedicure — $40
+<div class="menu">
 
-  </div>
-
-  <a href="index.html" class="button">Back Home</a>
+<div class="line"><span>Basic Pedicure</span><span>$45</span></div>
+<div class="line"><span>Deluxe Pedicure</span><span>$80</span></div>
+<div class="line"><span>Gel Add-On</span><span>$15</span></div>
+<div class="line"><span>Kids Pedicure</span><span>$40</span></div>
 
 </div>
+
+<a href="index.html" class="button">Back Home</a>
 
 </body>
 </html>
