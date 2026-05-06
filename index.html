@@ -34,7 +34,7 @@ body {
 
   background: linear-gradient(
     180deg,
-    rgba(163,184,153,0.35) 0%,  /* sage glow */
+    rgba(163,184,153,0.35) 0%,
     var(--black) 55%,
     var(--black) 100%
   );
@@ -49,7 +49,7 @@ body {
 }
 
 /* =====================
-   LOGO PANEL (BLACK LUXURY BOX)
+   LOGO PANEL
 ===================== */
 .hero-header {
   display: flex;
@@ -81,11 +81,11 @@ body {
 }
 
 /* =====================
-   BUTTON (RESTORED BLACK + GOLD)
+   BUTTON
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
-  background: #000; /* black */
+  background: #000;
   color: var(--gold);
   padding: 16px 40px;
   text-decoration: none;
@@ -114,7 +114,7 @@ body {
 }
 
 /* =====================
-   DIVIDER (SAGE → EMERALD)
+   DIVIDER
 ===================== */
 .divider {
   width: 70px;
@@ -154,6 +154,15 @@ h2 {
   margin-top: 30px;
 }
 
+/* CLICKABLE CARD LINK */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+/* CARD */
 .card {
   width: 240px;
   padding: 25px;
@@ -162,10 +171,11 @@ h2 {
   transition: 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-4px);
+/* HOVER (FIXED FOR FULL CARD) */
+.card-link:hover .card {
+  transform: translateY(-6px);
   border-color: var(--gold);
-  box-shadow: 0 0 20px rgba(4,106,56,0.25);
+  box-shadow: 0 0 25px rgba(201,162,78,0.35);
 }
 
 .card h3 {
@@ -289,6 +299,9 @@ h2 {
   </div>
 
 </div>
+
+<div class="divider"></div>
+
 <!-- GALLERY -->
 <div class="section">
 
