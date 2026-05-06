@@ -5,67 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manicures | Polished Intentions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <style>
-
-:root {
-  --black:#000;
-  --sage:#a3b899;
-  --emerald:#046a38;
-  --gold:#c9a24e;
-  --text:#f2eee6;
-}
 
 body {
   margin:0;
   font-family:'Italiana', serif;
   background: linear-gradient(180deg, rgba(163,184,153,0.25), #000 60%);
-  color: var(--text);
+  color:#f2eee6;
   text-align:center;
 }
 
-.header {
-  padding:60px 20px;
-  background: rgba(4,106,56,0.12);
-}
+.header { padding:70px 20px 30px; }
+.logo { width:230px; }
 
-.logo {
+h1 { color:#c9a24e; }
+
+.feature-img {
   width:260px;
-  margin-bottom:20px;
+  height:260px;
+  object-fit:cover;
+  border-radius:16px;
+  margin:25px auto;
+  border:1px solid rgba(201,162,78,0.4);
 }
 
-h1 {
-  color: var(--gold);
+.divider {
+  width:80px;
+  height:2px;
+  margin:35px auto;
+  background: linear-gradient(90deg, transparent, #c9a24e, transparent);
 }
 
-.section {
-  padding:80px 20px;
-  background: rgba(0,0,0,0.5);
-}
-
-.price-box {
-  max-width:600px;
+.menu {
+  max-width:650px;
   margin:auto;
   text-align:left;
-  color:#e6e1d8;
-  line-height:2;
+  font-family:'Playfair Display', serif;
+  font-size:17px;
+  line-height:2.2;
+}
+
+.section-title {
+  font-family:'Italiana';
+  color:#c9a24e;
+  font-size:22px;
+}
+
+.line {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(163,184,153,0.15);
+  padding:6px 0;
 }
 
 .button {
   display:inline-block;
   margin-top:40px;
-  padding:14px 35px;
+  padding:14px 38px;
   border-radius:40px;
-  border:1px solid var(--gold);
-  color:var(--gold);
-  text-decoration:none;
+  border:1px solid #c9a24e;
+  color:#c9a24e;
   background:#000;
+  text-decoration:none;
   font-family:'Kaushan Script', cursive;
-}
-
-.button:hover {
-  box-shadow:0 0 18px rgba(201,162,78,0.35);
 }
 
 </style>
@@ -76,31 +80,33 @@ h1 {
 <div class="header">
   <img src="logo.png" class="logo">
   <h1>Manicures</h1>
-  <p>Clean. Elegant. Timeless nail care.</p>
+  <p>Clean, elegant, and timeless nail care.</p>
+
+  <img src="pinknails.jpg" class="feature-img">
 </div>
 
-<div class="section">
+<div class="divider"></div>
 
-  <div class="price-box">
+<div class="menu">
 
-    <h2>Manicure Services</h2>
+<div class="section-title">Services</div>
 
-    Basic Manicure — $45<br>
-    Gel Manicure — $55<br>
-    Clip, File & Buff — $35<br><br>
+<div class="line"><span>Basic Manicure</span><span>$45</span></div>
+<div class="line"><span>Gel Manicure</span><span>$55</span></div>
+<div class="line"><span>Clip, File & Buff</span><span>$35</span></div>
 
-    BIAB Add-On — $15<br><br>
+<div class="line"><span>BIAB Add-On</span><span>$15</span></div>
 
-    Deluxe Manicure — $65<br>
-    Deluxe Gel Manicure — $75<br><br>
+<div class="line"><span>Deluxe Manicure</span><span>$65</span></div>
+<div class="line"><span>Deluxe Gel</span><span>$75</span></div>
 
-    Gel Removal (Add-On) — $20
-
-  </div>
-
-  <a href="index.html" class="button">Back Home</a>
+<div class="line"><span>Gel Removal</span><span>$20</span></div>
 
 </div>
+
+<div class="divider"></div>
+
+<a href="index.html" class="button">Back Home</a>
 
 </body>
 </html>
