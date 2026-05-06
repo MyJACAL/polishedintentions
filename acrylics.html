@@ -5,95 +5,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acrylics | Polished Intentions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <style>
 
 :root {
   --black:#000;
-  --sage:#a3b899;
-  --emerald:#046a38;
   --gold:#c9a24e;
   --text:#f2eee6;
+  --sage:#a3b899;
 }
 
 body {
   margin:0;
   font-family:'Italiana', serif;
   background: linear-gradient(180deg, rgba(163,184,153,0.25), #000 60%);
-  color: var(--text);
+  color:var(--text);
   text-align:center;
 }
 
 /* HEADER */
 .header {
-  padding:70px 20px;
-  background: rgba(4,106,56,0.12);
+  padding:70px 20px 30px;
 }
 
 .logo {
-  width:260px;
+  width:230px;
   margin-bottom:20px;
 }
 
 h1 {
-  color: var(--gold);
+  color:var(--gold);
+  font-size:34px;
 }
 
-/* GALLERY */
-.gallery {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:15px;
-  padding:40px 20px;
-}
-
-.gallery img {
-  width:220px;
-  height:220px;
+/* IMAGE */
+.feature-img {
+  width:260px;
+  height:260px;
   object-fit:cover;
-  border-radius:14px;
-  border:1px solid rgba(163,184,153,0.4);
-  transition:0.3s ease;
+  border-radius:16px;
+  border:1px solid rgba(201,162,78,0.4);
+  margin:25px auto;
 }
 
-.gallery img:hover {
-  transform:scale(1.04);
-  box-shadow:0 0 18px rgba(4,106,56,0.25);
+/* DIVIDER */
+.divider {
+  width:80px;
+  height:2px;
+  margin:35px auto;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
-/* SECTION */
-.section {
-  padding:80px 20px;
-  background: rgba(0,0,0,0.5);
-}
-
-.price-box {
+/* MENU */
+.menu {
   max-width:650px;
   margin:auto;
   text-align:left;
+  font-family:'Playfair Display', serif;
+  font-size:17px;
+  line-height:2.2;
   color:#e6e1d8;
-  line-height:2;
+}
+
+.section-title {
+  font-family:'Italiana', serif;
+  color:var(--gold);
+  font-size:22px;
+  margin-top:25px;
+}
+
+.line {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(163,184,153,0.15);
+  padding:6px 0;
 }
 
 /* BUTTON */
 .button {
   display:inline-block;
   margin-top:40px;
-  padding:14px 35px;
+  padding:14px 38px;
   border-radius:40px;
   border:1px solid var(--gold);
   color:var(--gold);
   text-decoration:none;
   background:#000;
   font-family:'Kaushan Script', cursive;
-  transition:0.3s ease;
-}
-
-.button:hover {
-  box-shadow:0 0 18px rgba(201,162,78,0.35);
-  transform:translateY(-2px);
 }
 
 </style>
@@ -101,53 +100,40 @@ h1 {
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <img src="logo.png" class="logo">
   <h1>Acrylic Services</h1>
   <p>Custom sets designed with precision, luxury, and intention.</p>
+
+  <img src="Red Nails.jpg" class="feature-img">
 </div>
 
-<!-- GALLERY -->
-<div class="gallery">
-  <img src="Red Nails.jpg" alt="Acrylic nails">
-  <img src="pinknails.jpg" alt="Pink nails">
-  <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
-</div>
+<div class="divider"></div>
 
-<!-- PRICING -->
-<div class="section">
+<div class="menu">
 
-  <div class="price-box">
+  <div class="section-title">Full Sets</div>
+  <div class="line"><span>Short</span><span>$70</span></div>
+  <div class="line"><span>Medium</span><span>$80</span></div>
+  <div class="line"><span>Long</span><span>$90</span></div>
+  <div class="line"><span>XL</span><span>$100</span></div>
 
-    <h2>Full Sets</h2>
-    Short — $70<br>
-    Medium — $80<br>
-    Long — $90<br>
-    XL — $100<br><br>
+  <div class="section-title">Fills</div>
+  <div class="line"><span>2 Weeks</span><span>$65</span></div>
+  <div class="line"><span>3 Weeks</span><span>$75</span></div>
+  <div class="line"><span>Rebalance</span><span>$85</span></div>
 
-    <h2>Fills & Maintenance</h2>
-    Fill (2 Weeks) — $65<br>
-    Fill (3 Weeks) — $75<br>
-    Rebalance — $85<br><br>
-
-    <h2>Add-Ons</h2>
-    Specialty Shape — +$10<br>
-    Shape Change — +$10<br>
-    Sublimation — $15<br>
-    Paraffin — $20<br><br>
-
-    <h2>Other</h2>
-    Overlay — $65<br>
-    Repair — $10<br>
-    Acrylic Removal — $35<br>
-    Foreign Removal — $40
-
-  </div>
-
-  <a href="index.html" class="button">Back Home</a>
+  <div class="section-title">Add-Ons</div>
+  <div class="line"><span>Specialty Shape</span><span>+$10</span></div>
+  <div class="line"><span>Shape Change</span><span>+$10</span></div>
+  <div class="line"><span>Sublimation</span><span>$15</span></div>
+  <div class="line"><span>Paraffin</span><span>$20</span></div>
 
 </div>
+
+<div class="divider"></div>
+
+<a href="index.html" class="button">Back Home</a>
 
 </body>
 </html>
