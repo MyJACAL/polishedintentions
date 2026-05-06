@@ -1,16 +1,12 @@
 /* =====================
    POLISHED INTENTIONS
-   MASTER STYLE SHEET (STABLE VERSION)
+   MASTER GLOBAL STYLE (UNIFIED SYSTEM)
 ===================== */
 
-/* =====================
-   FONT USAGE
-===================== */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&family=Playfair+Display:wght@400;500;600&display=swap');
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@400;500;600&family=Kaushan+Script&display=swap');
 
-/* =====================
-   GLOBAL RESET
-===================== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +14,7 @@
 }
 
 /* =====================
-   BODY (FIXED - NO CSS VARIABLES)
+   GLOBAL BODY
 ===================== */
 body {
   font-family: 'Italiana', serif;
@@ -26,7 +22,6 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  /* SAFE BACKGROUND (NO var() DEPENDENCY) */
   background: linear-gradient(
     180deg,
     rgba(163,184,153,0.35) 0%,
@@ -36,45 +31,36 @@ body {
 }
 
 /* =====================
-   HEADINGS
+   GLOBAL HEADINGS
 ===================== */
 h1, h2, h3 {
-  font-family: 'Italiana', serif;
   color: #c9a24e;
   letter-spacing: 1px;
+}
+
+/* =====================
+   LOGO HEADER (HOME)
+===================== */
+.logo-header {
+  padding: 40px 20px 10px;
+}
+
+.logo-wide {
+  width: 320px;
+  max-width: 90%;
 }
 
 /* =====================
    HERO
 ===================== */
 .hero {
-  padding: 110px 20px 80px;
+  padding: 90px 20px 70px;
   background: rgba(4,106,56,0.12);
 }
 
-.hero-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 18px;
-
-  background: #000;
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-}
-
-.logo {
-  width: 360px;
-  max-width: 90%;
-}
-
-/* =====================
-   TAGLINE
-===================== */
 .tagline {
   font-size: 24px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .subtext {
@@ -93,11 +79,8 @@ h1, h2, h3 {
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
-  letter-spacing: 1.5px;
-
   border: 1px solid #c9a24e;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .button:hover {
@@ -112,7 +95,6 @@ h1, h2, h3 {
   width: 80px;
   height: 2px;
   margin: 50px auto;
-
   background: linear-gradient(
     90deg,
     transparent,
@@ -126,7 +108,7 @@ h1, h2, h3 {
    SECTIONS
 ===================== */
 .section {
-  padding: 120px 20px;
+  padding: 100px 20px;
   background: rgba(0,0,0,0.55);
 }
 
@@ -145,7 +127,6 @@ h1, h2, h3 {
   text-decoration: none;
   color: inherit;
   display: block;
-  cursor: pointer;
 }
 
 .card {
@@ -160,10 +141,6 @@ h1, h2, h3 {
   transform: translateY(-6px);
   border-color: #c9a24e;
   box-shadow: 0 0 25px rgba(201,162,78,0.35);
-}
-
-.card h3 {
-  font-size: 20px;
 }
 
 /* =====================
@@ -182,16 +159,10 @@ h1, h2, h3 {
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid rgba(163,184,153,0.4);
-  transition: 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 18px rgba(4,106,56,0.2);
 }
 
 /* =====================
-   SERVICE PAGE IMAGE
+   FEATURE IMAGE (SERVICE PAGES)
 ===================== */
 .feature-img {
   width: 260px;
@@ -203,7 +174,7 @@ h1, h2, h3 {
 }
 
 /* =====================
-   PRICING MENU
+   MENU (PRICING TEXT ONLY DIFFERENCE)
 ===================== */
 .menu {
   max-width: 650px;
@@ -243,8 +214,8 @@ h1, h2, h3 {
    RESPONSIVE
 ===================== */
 @media (max-width: 768px) {
-  .logo {
-    width: 260px;
+  .logo-wide {
+    width: 250px;
   }
 
   .card {
@@ -254,9 +225,5 @@ h1, h2, h3 {
   .gallery img {
     width: 160px;
     height: 160px;
-  }
-
-  .menu {
-    padding: 0 20px;
   }
 }
