@@ -1,46 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Acrylic Services | Polished Intentions</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acrylics | Polished Intentions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --black:#000;
+  --sage:#a3b899;
+  --emerald:#046a38;
+  --gold:#c9a24e;
+  --text:#f2eee6;
+}
+
+body {
+  margin:0;
+  font-family:'Italiana', serif;
+  background: linear-gradient(180deg, rgba(163,184,153,0.25), #000 60%);
+  color: var(--text);
+  text-align:center;
+}
+
+/* HEADER */
+.header {
+  padding:70px 20px;
+  background: rgba(4,106,56,0.12);
+}
+
+.logo {
+  width:260px;
+  margin-bottom:20px;
+}
+
+h1 {
+  color: var(--gold);
+}
+
+/* GALLERY */
+.gallery {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  padding:40px 20px;
+}
+
+.gallery img {
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid rgba(163,184,153,0.4);
+  transition:0.3s ease;
+}
+
+.gallery img:hover {
+  transform:scale(1.04);
+  box-shadow:0 0 18px rgba(4,106,56,0.25);
+}
+
+/* SECTION */
+.section {
+  padding:80px 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+.price-box {
+  max-width:650px;
+  margin:auto;
+  text-align:left;
+  color:#e6e1d8;
+  line-height:2;
+}
+
+/* BUTTON */
+.button {
+  display:inline-block;
+  margin-top:40px;
+  padding:14px 35px;
+  border-radius:40px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  background:#000;
+  font-family:'Kaushan Script', cursive;
+  transition:0.3s ease;
+}
+
+.button:hover {
+  box-shadow:0 0 18px rgba(201,162,78,0.35);
+  transform:translateY(-2px);
+}
+
+</style>
 </head>
 
 <body>
 
-<header style="text-align:center; margin-top:40px;">
-  <img src="logo.png" width="200">
+<!-- HEADER -->
+<div class="header">
+  <img src="logo.png" class="logo">
   <h1>Acrylic Services</h1>
   <p>Custom sets designed with precision, luxury, and intention.</p>
-</header>
+</div>
 
-<section style="text-align:center; margin:40px;">
-  <img src="Red Nails.jpg" width="250">
-  <img src="pinknails.jpg" width="250">
-  <img src="Yellow Lemon Nails.jpg" width="250">
-</section>
+<!-- GALLERY -->
+<div class="gallery">
+  <img src="Red Nails.jpg" alt="Acrylic nails">
+  <img src="pinknails.jpg" alt="Pink nails">
+  <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
+</div>
 
-<section style="max-width:600px; margin:auto;">
-  <h2>Full Sets</h2>
-  <p>Short — $70</p>
-  <p>Medium — $80</p>
-  <p>Long — $90</p>
-  <p>XL — $100</p>
+<!-- PRICING -->
+<div class="section">
 
-  <h2>Maintenance</h2>
-  <p>Fill (2 Weeks) — $65</p>
-  <p>Fill (3 Weeks) — $75</p>
-  <p>Rebalance — $85</p>
+  <div class="price-box">
 
-  <h2>Add-Ons</h2>
-  <p>Specialty Shape — +$10</p>
-  <p>Shape Change — +$10</p>
-  <p>Sublimation — $15</p>
-  <p>Paraffin — $20</p>
-</section>
+    <h2>Full Sets</h2>
+    Short — $70<br>
+    Medium — $80<br>
+    Long — $90<br>
+    XL — $100<br><br>
 
-<div style="text-align:center; margin:50px;">
-  <a href="#" class="service-btn">Book Appointment</a>
+    <h2>Fills & Maintenance</h2>
+    Fill (2 Weeks) — $65<br>
+    Fill (3 Weeks) — $75<br>
+    Rebalance — $85<br><br>
+
+    <h2>Add-Ons</h2>
+    Specialty Shape — +$10<br>
+    Shape Change — +$10<br>
+    Sublimation — $15<br>
+    Paraffin — $20<br><br>
+
+    <h2>Other</h2>
+    Overlay — $65<br>
+    Repair — $10<br>
+    Acrylic Removal — $35<br>
+    Foreign Removal — $40
+
+  </div>
+
+  <a href="index.html" class="button">Back Home</a>
+
 </div>
 
 </body>
