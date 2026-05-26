@@ -22,15 +22,18 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  /* LUXURY SAGE → EMERALD → BLACK GRADIENT */
+  /* WHITE → SAGE → EMERALD → BLACK */
   background:
     linear-gradient(
       180deg,
-      #b7c7ae 0%,
-      #8ea685 18%,
-      #4f7c5c 38%,
-      #046a38 58%,
-      #022d1c 78%,
+      #ffffff 0%,
+      #f4f6f1 8%,
+      #dce6d5 18%,
+      #b7c7ae 32%,
+      #8ea685 48%,
+      #4f7c5c 64%,
+      #046a38 80%,
+      #022d1c 92%,
       #000000 100%
     );
 
@@ -52,9 +55,11 @@ h1, h2, h3 {
 .logo-header {
   width: 100%;
   max-width: 1200px;
+
   margin: 40px auto 20px;
 
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.22);
+
   padding: 30px 20px;
 
   border-radius: 28px;
@@ -63,9 +68,10 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.20);
 
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 }
 
 /* LOGO IMAGE */
@@ -86,12 +92,19 @@ h1, h2, h3 {
 .tagline {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #f8f4ec;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 2px 10px rgba(0,0,0,0.25);
 }
 
 .subtext {
-  color: #e6e1d8;
+  color: #f2eee6;
   margin-bottom: 30px;
+
+  text-shadow:
+    0 2px 10px rgba(0,0,0,0.20);
 }
 
 /* =====================
@@ -99,7 +112,9 @@ h1, h2, h3 {
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
-  background: rgba(0,0,0,0.7);
+
+  background: rgba(0,0,0,0.65);
+
   color: #c9a24e;
 
   padding: 14px 38px;
@@ -120,10 +135,10 @@ h1, h2, h3 {
 .button:hover {
   transform: translateY(-3px);
 
+  background: rgba(0,0,0,0.82);
+
   box-shadow:
     0 0 18px rgba(201,162,78,0.35);
-
-  background: rgba(0,0,0,0.85);
 }
 
 /* =====================
@@ -152,7 +167,7 @@ h1, h2, h3 {
 .section {
   padding: 100px 20px;
 
-  background: rgba(0,0,0,0.16);
+  background: rgba(0,0,0,0.08);
 
   backdrop-filter: blur(3px);
 }
@@ -164,6 +179,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 25px;
 
   margin-top: 30px;
@@ -180,15 +196,18 @@ h1, h2, h3 {
 
   padding: 25px;
 
-  background: rgba(4,106,56,0.16);
+  background: rgba(255,255,255,0.08);
 
-  border: 1px solid rgba(183,199,174,0.35);
+  border: 1px solid rgba(255,255,255,0.15);
 
   border-radius: 16px;
 
   transition: 0.3s ease;
 
   backdrop-filter: blur(5px);
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.12);
 }
 
 .card:hover {
@@ -197,7 +216,7 @@ h1, h2, h3 {
   border-color: #c9a24e;
 
   box-shadow:
-    0 0 25px rgba(201,162,78,0.35);
+    0 0 25px rgba(201,162,78,0.25);
 }
 
 /* =====================
@@ -207,6 +226,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 18px;
 }
 
@@ -218,10 +238,10 @@ h1, h2, h3 {
 
   border-radius: 16px;
 
-  border: 1px solid rgba(183,199,174,0.35);
+  border: 1px solid rgba(255,255,255,0.18);
 
   box-shadow:
-    0 8px 24px rgba(0,0,0,0.35);
+    0 8px 24px rgba(0,0,0,0.22);
 
   transition: 0.3s ease;
 }
@@ -248,7 +268,7 @@ h1, h2, h3 {
   margin: 25px auto;
 
   box-shadow:
-    0 8px 24px rgba(0,0,0,0.35);
+    0 8px 24px rgba(0,0,0,0.22);
 }
 
 /* =====================
@@ -267,7 +287,7 @@ h1, h2, h3 {
 
   line-height: 2.2;
 
-  color: #e6e1d8;
+  color: #f2eee6;
 }
 
 .section-title {
@@ -285,7 +305,7 @@ h1, h2, h3 {
 
   justify-content: space-between;
 
-  border-bottom: 1px solid rgba(183,199,174,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 
   padding: 6px 0;
 }
@@ -300,7 +320,7 @@ h1, h2, h3 {
 
   color: #d6d0c6;
 
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.30);
 
   backdrop-filter: blur(5px);
 }
