@@ -22,13 +22,7 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  background: linear-gradient(
-    180deg,
-    #e6efe3 0%,
-    #d7e4d1 40%,
-    #c4d2ba 70%,
-    #b2c3a7 100%
-  );
+  background: #b2c3a7;
 
   min-height: 100vh;
 }
