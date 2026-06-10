@@ -1,6 +1,6 @@
 /* =====================
    POLISHED INTENTIONS
-   LIGHT SAGE LUXURY THEME
+   SAGE LUXURY THEME (FINAL)
 ===================== */
 
 /* FONTS */
@@ -14,7 +14,7 @@
 }
 
 /* =====================
-   BODY
+   BODY (LIGHT SAGE LUXURY)
 ===================== */
 body {
   font-family: 'Italiana', serif;
@@ -22,7 +22,6 @@ body {
   text-align: center;
   line-height: 1.75;
 
-  /* LIGHT SAGE GREEN BACKGROUND */
   background: linear-gradient(
     180deg,
     #e6efe3 0%,
@@ -90,7 +89,7 @@ h1, h2, h3 {
 }
 
 /* =====================
-   BUTTONS (BLACK + GOLD)
+   BUTTON (BLACK + GOLD LUXURY)
 ===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
@@ -99,9 +98,10 @@ h1, h2, h3 {
   color: #c9a24e;
 
   padding: 14px 38px;
-  text-decoration: none;
 
+  text-decoration: none;
   border-radius: 50px;
+
   display: inline-block;
 
   border: 1px solid #c9a24e;
@@ -195,20 +195,46 @@ h1, h2, h3 {
 }
 
 /* =====================
-   REVIEW BOX
+   TESTIMONIALS (REVIEWS)
 ===================== */
-.review-box {
-  max-width: 700px;
+.testimonial-container {
+  max-width: 900px;
   margin: 30px auto;
 
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  background: rgba(255,255,255,0.7);
+.testimonial {
+  background: rgba(255,255,255,0.75);
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 16px;
 
-  color: #333;
+  padding: 25px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
   font-family: 'Playfair Display', serif;
+  color: #333;
+
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+}
+
+.testimonial p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.testimonial span {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
 }
 
 /* =====================
