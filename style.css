@@ -273,13 +273,19 @@ h3 {
 
   font-size: 13px;
 
-  color: var(--emerald-dark);
+  color: #ffffff;
 
-  background: rgba(255,255,255,0.6);
+  background: linear-gradient(
+    180deg,
+    #0f6b50 0%,
+    #0b5a43 100%
+  );
 
-  border-top: 1px solid rgba(15,107,80,0.15);
+  border-top: 2px solid #d8b45a;
+
+  box-shadow:
+    0 -5px 20px rgba(0,0,0,0.15);
 }
-
 /* =====================
    LINKS
 ===================== */
