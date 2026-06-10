@@ -19,14 +19,14 @@
 :root {
   --sage: #b2c3a7;
 
-  --emerald-dark: #0f6b50;
-  --emerald-main: #0f8a63;
-  --emerald-light: #27b184;
+  --emerald-dark: #0b2212;
+  --emerald-main: #0b2212;
+  --emerald-light: #0b2212;
 
-  --gold-light: #fff4c4;
-  --gold-main: #f6d978;
-  --gold-mid: #d8b45a;
-  --gold-deep: #c89d3f;
+  --gold-light: #d4af37;
+  --gold-main: #d4af37;
+  --gold-mid: #d4af37;
+  --gold-deep: #d4af37;
 
   --black: #000000;
 }
